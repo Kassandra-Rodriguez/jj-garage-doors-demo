@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>JJ Garage Doors | Garage Door Repair &amp; Installation in El Paso, TX</title>
+<meta name="description" content="Family owned garage door repair, springs, openers and new doors in El Paso, TX. 24/7 emergency service and a free estimate. Call (915) 262-1403.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Stand in mark (a garage door in panels). Replace with the real JJ Garage Doors logo. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="jj-mark" viewBox="0 0 56 46">
+    <path d="M4 44V16L28 3l24 13v28" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <rect x="11" y="19" width="34" height="25" rx="1.5" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M11 27.5h34M11 36h34" stroke="currentColor" stroke-width="2.6"/>
+  </symbol>
+</svg>
+
+<!-- ══ HEADER ══ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="JJ Garage Doors, home">
+      <svg class="brand-mark" width="40" height="33" aria-hidden="true"><use href="#jj-mark"/></svg>
+      <span class="brand-text">
+        <strong>JJ Garage Doors</strong>
+        <em data-en="Family owned · El Paso" data-es="Negocio familiar · El Paso">Family owned · El Paso</em>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      <a href="#services" data-en="Services"     data-es="Servicios">Services</a>
+      <a href="#work"     data-en="Our Work"     data-es="Trabajos">Our Work</a>
+      <a href="#how"      data-en="How It Works" data-es="Cómo Trabajamos">How It Works</a>
+      <a href="#area"     data-en="Find Us"      data-es="Ubicación">Find Us</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Cambiar a español">
+        <span class="lang-on">EN</span><span class="lang-off">ES</span>
+      </button>
+      <a class="btn btn-call" href="#quote">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM15 3v4h4"/><path d="M9 12h6M9 16h4"/></svg>
+        <span data-en="Free estimate" data-es="Estimado gratis">Free estimate</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="hero-brand">
+        <svg class="hero-brand-mark" width="82" height="68" aria-hidden="true"><use href="#jj-mark"/></svg>
+        <p class="hero-brand-name">JJ Garage Doors</p>
+        <p class="hero-brand-tag" data-en="Repair · Install · 24/7 · El Paso"
+                                  data-es="Reparación · Instalación · 24/7 · El Paso">Repair · Install · 24/7 · El Paso</p>
+      </div>
+
+      <p class="hero-sub"
+         data-en="Broken spring, stuck door or a new look for the house. A family owned crew comes to you, any hour, and the estimate is free."
+         data-es="Resorte roto, puerta atorada o una puerta nueva para tu casa. Un equipo familiar llega a ti a cualquier hora, y el estimado es gratis.">
+         Broken spring, stuck door or a new look for the house. A family owned crew comes to you, any hour, and the estimate is free.</p>
+    </div>
+
+    <!-- Lead capture card -->
+    <div class="quote-card" id="quote">
+      <div class="quote-head">
+        <h2 data-en="Get a free estimate" data-es="Pide un estimado gratis">Get a free estimate</h2>
+        <p data-en="Takes a minute. Tell us what the door is doing and we call you back."
+           data-es="Toma un minuto. Cuéntanos qué le pasa a la puerta y te llamamos.">Takes a minute. Tell us what the door is doing and we call you back.</p>
+      </div>
+
+      <a class="btn btn-primary btn-block quote-open" href="#quote"
+         data-en="Start my estimate" data-es="Comenzar mi estimado">Start my estimate</a>
+
+      <form id="quoteForm" novalidate>
+        <div class="field">
+          <label for="qName" data-en="Your name" data-es="Tu nombre">Your name</label>
+          <input id="qName" name="name" type="text" autocomplete="name" required>
+          <span class="err" data-en="Please enter your name" data-es="Por favor escribe tu nombre">Please enter your name</span>
+        </div>
+
+        <div class="field">
+          <label for="qPhone" data-en="Phone number" data-es="Número de teléfono">Phone number</label>
+          <input id="qPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(915) 000-0000" required>
+          <span class="err" data-en="Please enter a valid phone number" data-es="Escribe un número de teléfono válido">Please enter a valid phone number</span>
+        </div>
+
+        <div class="field">
+          <label for="qProject" data-en="What do you need?" data-es="¿Qué necesitas?">What do you need?</label>
+          <select id="qProject" name="project" required>
+            <option value="" data-en="Select one…" data-es="Selecciona una…">Select one…</option>
+            <option value="spring"  data-en="Broken spring"              data-es="Resorte roto">Broken spring</option>
+            <option value="stuck"   data-en="Door stuck or off track"    data-es="Puerta atorada o fuera de riel">Door stuck or off track</option>
+            <option value="opener"  data-en="Opener not working"         data-es="El abridor no funciona">Opener not working</option>
+            <option value="parts"   data-en="Rollers, cables or remote"  data-es="Rodillos, cables o control">Rollers, cables or remote</option>
+            <option value="newdoor" data-en="New garage door"            data-es="Puerta de garaje nueva">New garage door</option>
+            <option value="gate"    data-en="Gate or gate operator"      data-es="Portón u operador de portón">Gate or gate operator</option>
+            <option value="other"   data-en="Something else"             data-es="Otra cosa">Something else</option>
+          </select>
+          <span class="err" data-en="Please choose an option" data-es="Elige una opción">Please choose an option</span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="qWhen" data-en="How soon?" data-es="¿Qué tan pronto?">How soon?</label>
+            <select id="qWhen" name="when">
+              <option value=""      data-en="Select…"        data-es="Selecciona…">Select…</option>
+              <option value="now"   data-en="Right now"      data-es="Ahora mismo">Right now</option>
+              <option value="today" data-en="Today"          data-es="Hoy">Today</option>
+              <option value="week"  data-en="This week"      data-es="Esta semana">This week</option>
+              <option value="price" data-en="Just pricing"   data-es="Solo precio">Just pricing</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="qDoor" data-en="Which door?" data-es="¿Qué puerta?">Which door?</label>
+            <select id="qDoor" name="door">
+              <option value=""       data-en="Select…"       data-es="Selecciona…">Select…</option>
+              <option value="1car"   data-en="One car"       data-es="Un auto">One car</option>
+              <option value="2car"   data-en="Two car"       data-es="Dos autos">Two car</option>
+              <option value="comm"   data-en="Commercial"    data-es="Comercial">Commercial</option>
+              <option value="unsure" data-en="Not sure"      data-es="No estoy seguro">Not sure</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field field-inline">
+          <input id="qSpanish" name="spanish" type="checkbox">
+          <label for="qSpanish" data-en="Contact me in Spanish" data-es="Contáctenme en español">Contact me in Spanish</label>
+        </div>
+
+        <button class="btn btn-primary btn-block" type="submit"
+                data-en="Get my free estimate" data-es="Pedir mi estimado gratis">Get my free estimate</button>
+
+        <p class="form-foot">
+          <span data-en="Or call now:" data-es="O llama ahora:">Or call now:</span>
+          <a href="tel:+19152621403">(915) 262-1403</a>
+        </p>
+      </form>
+
+      <div class="quote-success" id="quoteSuccess" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+        <h3 data-en="Thanks, we will call you." data-es="Gracias, te llamamos.">Thanks, we will call you.</h3>
+        <p data-en="We will call to set a time. If the door will not close, call (915) 262-1403 now."
+           data-es="Te llamamos para agendar. Si la puerta no cierra, llama al (915) 262-1403 ahora.">We will call to set a time. If the door will not close, call (915) 262-1403 now.</p>
+        <p class="demo-note" data-en="Demo only. This form is not connected to email yet."
+                             data-es="Solo demostración. Este formulario aún no está conectado.">Demo only. This form is not connected to email yet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRUST BAR ══ -->
+<section class="trustbar" aria-label="Why homeowners call JJ Garage Doors">
+  <div class="wrap trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z"/></svg>
+      <p><strong data-en="5.0 on Google" data-es="5.0 en Google">5.0 on Google</strong>
+         <span data-en="71 neighbors rated us" data-es="71 vecinos nos calificaron">71 neighbors rated us</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <p><strong data-en="24/7 emergency" data-es="Emergencias 24/7">24/7 emergency</strong>
+         <span data-en="Nights and weekends too" data-es="También de noche y fines de semana">Nights and weekends too</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6zM15 3v4h4"/><path d="M9 12h6M9 16h4"/></svg>
+      <p><strong data-en="Free estimate" data-es="Estimado gratis">Free estimate</strong>
+         <span data-en="No cost to find out" data-es="Sin costo saber el precio">No cost to find out</span></p>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 9v12h6v-6h6v6h6V9z"/></svg>
+      <p><strong data-en="Family owned" data-es="Negocio familiar">Family owned</strong>
+         <span data-en="Local, and answers the phone" data-es="Local, y contesta el teléfono">Local, and answers the phone</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-en="What we fix and install" data-es="Lo que reparamos e instalamos">What we fix and install</p>
+      <h2 data-en="If it opens and closes, we handle it" data-es="Si abre y cierra, nosotros lo resolvemos">If it opens and closes, we handle it</h2>
+      <p class="section-sub"
+         data-en="Homes and businesses across El Paso call us for the same few problems. One phone call, one crew, and the door works again."
+         data-es="Casas y negocios de todo El Paso nos llaman por los mismos problemas. Una llamada, un equipo, y la puerta vuelve a funcionar.">
+         Homes and businesses across El Paso call us for the same few problems. One phone call, one crew, and the door works again.</p>
+    </div>
+
+    <ul class="svc-grid">
+      <li class="svc">
+        <img src="assets/interior-white-door-opener.jpg" alt="" loading="lazy">
+        <div class="svc-body">
+          <h3 data-en="Broken springs" data-es="Resortes rotos">Broken springs</h3>
+          <p data-en="Snapped or worn, replaced fast" data-es="Rotos o gastados, cambiados rápido">Snapped or worn, replaced fast</p>
+        </div>
+      </li>
+      <li class="svc">
+        <img src="assets/modern-brown-door-palm.jpg" alt="" loading="lazy">
+        <div class="svc-body">
+          <h3 data-en="New garage doors" data-es="Puertas de garaje nuevas">New garage doors</h3>
+          <p data-en="Wood look, glass, carriage styles" data-es="Efecto madera, vidrio, estilo carruaje">Wood look, glass, carriage styles</p>
+        </div>
+      </li>
+      <li class="svc">
+        <img src="assets/liftmaster-opener.jpg" alt="" loading="lazy">
+        <div class="svc-body">
+          <h3 data-en="Openers, LiftMaster and more" data-es="Abridores, LiftMaster y más">Openers, LiftMaster and more</h3>
+          <p data-en="Quiet, reliable, installed right" data-es="Silenciosos, confiables, bien instalados">Quiet, reliable, installed right</p>
+        </div>
+      </li>
+      <li class="svc">
+        <img src="assets/glass-panel-closeup.jpg" alt="" loading="lazy">
+        <div class="svc-body">
+          <h3 data-en="Rollers, cables and remotes" data-es="Rodillos, cables y controles">Rollers, cables and remotes</h3>
+          <p data-en="The small parts that stop a door" data-es="Las piezas pequeñas que detienen una puerta">The small parts that stop a door</p>
+        </div>
+      </li>
+      <li class="svc">
+        <img src="assets/gate-horizontal-slats.jpg" alt="" loading="lazy">
+        <div class="svc-body">
+          <h3 data-en="Gates and gate operators" data-es="Portones y operadores">Gates and gate operators</h3>
+          <p data-en="Sliding gates that open on command" data-es="Portones corredizos que abren al instante">Sliding gates that open on command</p>
+        </div>
+      </li>
+      <li class="svc">
+        <img src="assets/brick-home-dark-modern.jpg" alt="" loading="lazy">
+        <div class="svc-body">
+          <span class="svc-tag" data-en="Anytime" data-es="Siempre">Anytime</span>
+          <h3 data-en="24/7 emergency repair" data-es="Reparación de emergencia 24/7">24/7 emergency repair</h3>
+          <p data-en="Stuck at midnight? Call us" data-es="¿Atorada a medianoche? Llámanos">Stuck at midnight? Call us</p>
+        </div>
+      </li>
+    </ul>
+    <p class="svc-note" data-en="Homes and commercial doors. Not sure what is wrong? Describe it and we will tell you."
+                        data-es="Casas y puertas comerciales. ¿No sabes qué le pasa? Descríbelo y te decimos.">Homes and commercial doors. Not sure what is wrong? Describe it and we will tell you.</p>
+  </div>
+</section>
+
+<!-- ══ WORK GALLERY ══ -->
+<section class="section section-light" id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-en="Recent work" data-es="Trabajos recientes">Recent work</p>
+      <h2 data-en="Doors we have put up" data-es="Puertas que hemos instalado">Doors we have put up</h2>
+    </div>
+    <div class="carousel" id="workCarousel" aria-roledescription="carousel" aria-label="Recent JJ Garage Doors jobs">
+      <div class="carousel-viewport" id="carouselViewport">
+        <ul class="carousel-track" id="carouselTrack">
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/modern-brown-door-palm.jpg" width="1160" height="653"
+                 alt="Dark brown garage door with tall glass panels on a stucco home with a palm tree">
+            <span class="slide-cap" data-en="Modern glass panel door" data-es="Puerta moderna con paneles de vidrio">Modern glass panel door</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/wood-look-long-windows.jpg" width="1440" height="810"
+                 alt="Wood grain garage door with a row of windows on a stucco house">
+            <span class="slide-cap" data-en="Wood look door with a window row" data-es="Puerta efecto madera con hilera de ventanas">Wood look door with a window row</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/white-door-brick-home.jpg" width="1280" height="720"
+                 alt="White garage door with black window inserts on a red brick home">
+            <span class="slide-cap" data-en="White door, black windows, brick home" data-es="Puerta blanca con ventanas negras en casa de ladrillo">White door, black windows, brick home</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/dark-carriage-door.jpg" width="1280" height="720"
+                 alt="Dark brown carriage style garage door with a row of windows across the top">
+            <span class="slide-cap" data-en="Carriage style door in dark brown" data-es="Puerta estilo carruaje en café oscuro">Carriage style door in dark brown</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/brick-home-dark-modern.jpg" width="1280" height="720"
+                 alt="Dark modern garage door with two glass panels on a brick home">
+            <span class="slide-cap" data-en="Dark modern door on brick" data-es="Puerta moderna oscura en ladrillo">Dark modern door on brick</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/two-car-arched-brown.jpg" width="809" height="1014" style="object-position:center 72%"
+                 alt="Two dark brown arched garage doors on a stucco home with a tile roof">
+            <span class="slide-cap" data-en="Matching pair with arched tops" data-es="Par a juego con parte superior arqueada">Matching pair with arched tops</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/gate-horizontal-slats.jpg" width="1280" height="720"
+                 alt="Black sliding driveway gate with horizontal slats and an operator">
+            <span class="slide-cap" data-en="Sliding gate with an operator" data-es="Portón corredizo con operador">Sliding gate with an operator</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/gate-solid-brown.jpg" width="1280" height="720"
+                 alt="Solid brown sliding driveway gate with an arm operator">
+            <span class="slide-cap" data-en="Solid privacy gate" data-es="Portón sólido de privacidad">Solid privacy gate</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/glass-garage-door.jpg" width="1400" height="875"
+                 alt="Full glass garage door in a black frame on a white stucco house with a turf lawn">
+            <span class="slide-cap" data-en="Full glass door in a black frame" data-es="Puerta de vidrio completo con marco negro">Full glass door in a black frame</span>
+          </li>
+          <li class="slide" aria-roledescription="slide">
+            <img src="assets/liftmaster-opener.jpg" width="1280" height="720"
+                 alt="LiftMaster wall mount garage door opener installed over a garage door">
+            <span class="slide-cap" data-en="LiftMaster opener, installed" data-es="Abridor LiftMaster instalado">LiftMaster opener, installed</span>
+          </li>
+        </ul>
+      </div>
+
+      <button class="carousel-btn carousel-prev" type="button" aria-label="Previous job" aria-controls="carouselTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+      <button class="carousel-btn carousel-next" type="button" aria-label="Next job" aria-controls="carouselTrack">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Choose a job"></div>
+    </div>
+    <p class="gallery-note" data-en="Recent JJ Garage Doors jobs around El Paso. Ask to see work near you."
+                            data-es="Trabajos recientes de JJ Garage Doors por El Paso. Pide ver trabajos cerca de ti.">Recent JJ Garage Doors jobs around El Paso. Ask to see work near you.</p>
+  </div>
+</section>
+
+<!-- ══ HOW IT WORKS ══ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head section-head-center">
+      <p class="eyebrow" data-en="How it works" data-es="Cómo trabajamos">How it works</p>
+      <h2 data-en="Repair or replace? We tell you straight" data-es="¿Reparar o reemplazar? Te decimos la verdad">Repair or replace? We tell you straight</h2>
+      <p class="section-sub"
+         data-en="A good tech does not sell you a new door when a spring will do. Here is how a visit goes, and why the estimate costs you nothing."
+         data-es="Un buen técnico no te vende una puerta nueva cuando basta un resorte. Así es una visita, y por qué el estimado no te cuesta nada.">
+         A good tech does not sell you a new door when a spring will do. Here is how a visit goes, and why the estimate costs you nothing.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <h3 data-en="Call or send the form" data-es="Llama o manda el formulario">Call or send the form</h3>
+        <p data-en="Tell us what the door is doing. A real person answers, day or night."
+           data-es="Cuéntanos qué hace la puerta. Contesta una persona real, de día o de noche.">Tell us what the door is doing. A real person answers, day or night.</p>
+      </div>
+      <div class="step">
+        <h3 data-en="We come to you" data-es="Llegamos a tu casa">We come to you</h3>
+        <p data-en="The tech looks at the door, the springs, the tracks and the opener."
+           data-es="El técnico revisa la puerta, los resortes, los rieles y el abridor.">The tech looks at the door, the springs, the tracks and the opener.</p>
+      </div>
+      <div class="step">
+        <h3 data-en="You hear the price first" data-es="Primero sabes el precio">You hear the price first</h3>
+        <p data-en="Repair or replace, you get the number and the reason before any work starts."
+           data-es="Reparar o reemplazar, te damos el precio y la razón antes de empezar.">Repair or replace, you get the number and the reason before any work starts.</p>
+      </div>
+      <div class="step">
+        <h3 data-en="Fixed and tested" data-es="Arreglado y probado">Fixed and tested</h3>
+        <p data-en="We run the door, check the balance and the safety reverse, then clean up."
+           data-es="Probamos la puerta, revisamos el balance y el reversa de seguridad, y limpiamos.">We run the door, check the balance and the safety reverse, then clean up.</p>
+      </div>
+    </div>
+
+    <div class="steps-cta">
+      <a class="btn btn-primary" href="#quote" data-en="Book the free estimate" data-es="Agenda el estimado gratis">Book the free estimate</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EMERGENCY ══ -->
+<section class="section emerg" id="emergency">
+  <div class="wrap emerg-inner">
+    <div>
+      <p class="eyebrow" data-en="24/7 emergency" data-es="Emergencia 24/7">24/7 emergency</p>
+      <h2 data-en="Door will not close? Call now." data-es="¿La puerta no cierra? Llama ahora.">Door will not close? Call now.</h2>
+      <p class="emerg-sub"
+         data-en="A snapped spring or a door off its track leaves your garage open. We pick up at night and on weekends."
+         data-es="Un resorte roto o una puerta fuera de riel deja tu garaje abierto. Contestamos de noche y en fines de semana.">
+         A snapped spring or a door off its track leaves your garage open. We pick up at night and on weekends.</p>
+      <ul class="emerg-list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg><span data-en="Open every hour of every day" data-es="Abierto a toda hora, todos los días">Open every hour of every day</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg><span data-en="We bring the parts to you" data-es="Te llevamos las piezas">We bring the parts to you</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg><span data-en="Free estimate, no pressure" data-es="Estimado gratis, sin presión">Free estimate, no pressure</span></li>
+      </ul>
+    </div>
+    <div class="emerg-card">
+      <p class="eyebrow" data-en="Call or text anytime" data-es="Llama o escribe a cualquier hora">Call or text anytime</p>
+      <a class="emerg-phone" href="tel:+19152621403">(915) 262-1403</a>
+      <a class="btn btn-primary btn-block btn-lg" href="tel:+19152621403" data-en="Call now" data-es="Llamar ahora">Call now</a>
+      <a class="btn btn-ghost btn-block" href="#quote" data-en="Or send a request" data-es="O manda una solicitud">Or send a request</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LOCATION ══ -->
+<section class="section section-light" id="area">
+  <div class="wrap">
+    <div class="section-head section-head-center">
+      <p class="eyebrow" data-en="Find us" data-es="Ubicación">Find us</p>
+      <h2 data-en="Local to El Paso, a short drive away" data-es="Locales de El Paso, cerca de ti">Local to El Paso, a short drive away</h2>
+    </div>
+
+    <div class="area-grid">
+      <div class="area-map">
+        <iframe src="https://maps.google.com/maps?q=14800%20Miguel%20St%2C%20El%20Paso%2C%20TX%2079928&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of JJ Garage Doors, 14800 Miguel St, El Paso, TX"></iframe>
+        <p class="area-addr">14800 Miguel St, El Paso, TX 79928</p>
+      </div>
+
+      <div class="area-panel">
+        <p class="area-lead"
+           data-en="Based on the east side, serving homes and businesses across El Paso. Call and we are on the way."
+           data-es="Con base en el este, atendemos casas y negocios de todo El Paso. Llama y vamos en camino.">
+           Based on the east side, serving homes and businesses across El Paso. Call and we are on the way.</p>
+
+        <ul class="area-facts">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z"/></svg>
+            <div><strong data-en="Call or text" data-es="Llama o escribe">Call or text</strong><a href="tel:+19152621403">(915) 262-1403</a></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+            <div><strong data-en="Address" data-es="Dirección">Address</strong>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=14800+Miguel+St+El+Paso+TX+79928" target="_blank" rel="noopener"
+                 data-en="Get directions" data-es="Cómo llegar">Get directions</a></div>
+          </li>
+        </ul>
+
+        <h3 class="area-sub" data-en="Areas we cover" data-es="Zonas que cubrimos">Areas we cover</h3>
+        <ul class="area-checks">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>East Side</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Lower Valley</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Horizon City</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Northeast</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>Central</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>West Side</li>
+        </ul>
+
+        <a class="btn btn-primary btn-block area-cta" href="#quote"
+           data-en="Request an estimate" data-es="Solicitar un estimado">Request an estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL CTA ══ -->
+<section class="finalcta">
+  <div class="wrap finalcta-inner">
+    <h2 data-en="Tell us what the door is doing." data-es="Cuéntanos qué hace la puerta.">Tell us what the door is doing.</h2>
+    <p data-en="Free estimate, a straight answer, and a crew that shows up."
+       data-es="Estimado gratis, una respuesta honesta, y un equipo que sí llega.">Free estimate, a straight answer, and a crew that shows up.</p>
+    <div class="cta-row cta-row-center">
+      <a class="btn btn-primary btn-lg" href="#quote" data-en="Get my free estimate" data-es="Pedir mi estimado gratis">Get my free estimate</a>
+      <a class="btn btn-ghost btn-lg" href="tel:+19152621403" data-en="Call (915) 262-1403" data-es="Llamar (915) 262-1403">Call (915) 262-1403</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <span class="footer-logo">
+        <svg width="52" height="43" aria-hidden="true"><use href="#jj-mark"/></svg>
+        <strong>JJ Garage Doors</strong>
+      </span>
+      <p class="foot-note">
+        <span data-en="Garage door repair, springs, openers and new doors · El Paso, TX" data-es="Reparación de puertas de garaje, resortes, abridores y puertas nuevas · El Paso, TX">Garage door repair, springs, openers and new doors · El Paso, TX</span><br>
+        <span data-en="Family owned · 24/7 emergency · free estimates" data-es="Negocio familiar · emergencias 24/7 · estimados gratis">Family owned · 24/7 emergency · free estimates</span>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+      <p>
+        <a href="tel:+19152621403">Call (915) 262-1403</a><br>
+        <a href="sms:+19152621403" data-en="Text (915) 262-1403" data-es="Texto (915) 262-1403">Text (915) 262-1403</a><br>
+        <span>14800 Miguel St<br>El Paso, TX 79928</span>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="See more work" data-es="Ver más trabajos">See more work</h4>
+      <p>
+        <a href="https://www.facebook.com/jjgaragedoorsep" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://www.instagram.com/jjgaragedoorsep/" target="_blank" rel="noopener">Instagram</a>
+      </p>
+    </div>
+
+    <div>
+      <h4 data-en="Hours" data-es="Horario">Hours</h4>
+      <p><span data-en="Emergency service 24/7" data-es="Servicio de emergencia 24/7">Emergency service 24/7</span><br>
+         <span data-en="Free estimates" data-es="Estimados gratis">Free estimates</span><br>
+         <span class="demo-inline" data-en="(confirm office hours)" data-es="(confirmar horario de oficina)">(confirm office hours)</span></p>
+    </div>
+  </div>
+
+  <div class="wrap footer-base">
+    <p>© <span id="yr">2026</span> JJ Garage Doors Ltd. Co. · El Paso, TX</p>
+    <p class="spec-note" data-en="Concept site prepared for JJ Garage Doors. Not an official page."
+                         data-es="Sitio conceptual preparado para JJ Garage Doors. No es una página oficial.">Concept site prepared for JJ Garage Doors. Not an official page.</p>
+  </div>
+</footer>
+
+<!-- ══ STICKY MOBILE BAR ══ -->
+<div class="mobile-bar">
+  <a class="btn btn-ghost mb-btn" href="#quote" data-en="Estimate" data-es="Estimado">Estimate</a>
+  <a class="btn btn-ghost mb-btn" href="sms:+19152621403" data-en="Text" data-es="Texto">Text</a>
+  <a class="btn btn-primary mb-btn" href="tel:+19152621403">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z"/></svg>
+    <span data-en="Call" data-es="Llamar">Call</span>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
